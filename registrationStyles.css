@@ -1,0 +1,119 @@
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body {
+  background: linear-gradient(270deg, #43cea2, #185a9d, #43cea2, #185a9d);
+  background-size: 200% 200%;
+  animation: gradient 8s ease infinite;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #ffffff;
+}
+
+.form_container {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+}
+
+.form_signin {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form_signin input {
+  padding: 15px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.form_signin input::placeholder {
+  color: #ffffff;
+}
+
+.form_signin button {
+  padding: 15px 25px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #185a9d;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form_signin button:hover {
+  background-color: #43cea2;
+  color: #ffffff;
+}
+
+.form_signin a {
+  color: #ffffff;
+  text-decoration: none;
+  align-self: center;
+  margin-top: 20px;
+}
+
+.form_signin a:hover {
+  color: #43cea2;
+}
+
+/* Add previous CSS code here. */
+
+.passwordContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.passwordContainer span{
+  font-size: 20px;
+}
+
+.passwordContainer #togglePasswordVisibility {
+  right: 40px;
+}
+
+.passwordContainer #generatePass {
+  display: none;
+}
+
+.passwordContainer button:hover {
+  color: #43cea2;
+}
+.btn-password{
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  width:20px;
+  height: 50px;
+  gap: 5px;
+  right:100px;
+}
+.material-icons {
+  
+}
